@@ -1,4 +1,12 @@
 # MIRAI: Metacognitive Intent-Reflective Action Integration Model
+## Setup
+```bash
+git clone https://github.com/Azuma413/MIRAI.git
+cd MIRAI
+uv sync
+uv pip install torch torchvision
+uv run python -c "import torch; print(f'GPU: {torch.cuda.is_available()}')"
+```
 
 ## 階層型生成ロボット基盤モデル アーキテクチャ仕様書
 ### 1. アーキテクチャの基本理念
@@ -66,3 +74,4 @@
 - Qwen3.5
 - EO-1
 - pi0
+- AdaLM-Zero
